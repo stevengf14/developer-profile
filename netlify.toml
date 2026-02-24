@@ -5,6 +5,3 @@
 
 [build.environment]
   NODE_VERSION = "18"
-
-# Disable Next.js plugin completely
-[plugins]
