@@ -86,7 +86,7 @@ export default function AISpotlight() {
           </h2>
           
           <p className="text-xl text-cyber-muted max-w-3xl mx-auto font-mono">
-          Leading research in Computer Vision and Smart Home technologies with publications in premier IEEE/ACM venues and completed Master's in Applied AI
+          Leading research in Computer Vision and Smart Home technologies with publications in premier IEEE/ACM venues and completed Master&apos;s in Applied AI
         </p>
         </motion.div>
 

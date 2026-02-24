@@ -69,7 +69,7 @@ export default function Contact() {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Let's Connect</span>
+            <span className="gradient-text">Let&apos;s Connect</span>
           </h2>
           
           <p className="text-xl text-cyber-muted max-w-3xl mx-auto font-mono">
