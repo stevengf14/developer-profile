@@ -5,6 +5,3 @@
 
 [build.environment]
   NODE_VERSION = "18"
-
-[plugins]
-  # This empty section disables UI plugins
