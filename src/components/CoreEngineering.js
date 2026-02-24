@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Code, Database, Cloud, Shield, TrendingUp, Zap } from 'lucide-react'
+import { Code, Database, Cloud, Shield, TrendingUp, Zap, Award } from 'lucide-react'
 
 export default function CoreEngineering() {
   const technologies = [
@@ -204,33 +204,6 @@ export default function CoreEngineering() {
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 text-cyber-text">Technology Proficiency</h3>
             <p className="text-cyber-muted font-mono">Core technologies powering enterprise solutions</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {technologies.map((tech, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="glass p-4 rounded-lg"
-              >
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-mono text-cyber-text">{tech.name}</span>
-                  <span className="text-sm font-mono text-cyber-accent">{tech.level}%</span>
-                </div>
-                <div className="w-full bg-cyber-surface rounded-full h-2">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${tech.level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                    className={`h-2 rounded-full ${tech.color}`}
-                  />
-                </div>
-              </motion.div>
-            ))}
           </div>
         </motion.div>
       </div>

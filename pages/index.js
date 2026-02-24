@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NeuralNetwork from '../src/components/NeuralNetwork'
 import Hero from '../src/components/Hero'
 import AISpotlight from '../src/components/AISpotlight'
+import Courses from '../src/components/Courses'
 import CoreEngineering from '../src/components/CoreEngineering'
 import HybridEdge from '../src/components/HybridEdge'
 import Contact from '../src/components/Contact'
@@ -41,6 +42,7 @@ export default function Home() {
           <Hero />
           <AISpotlight />
           <CoreEngineering />
+          <Courses />
           <HybridEdge />
           <Contact />
         </div>

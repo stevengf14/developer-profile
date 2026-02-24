@@ -1,23 +1,29 @@
 import { motion } from 'framer-motion'
-import { Brain, Eye, Home, Award, BookOpen, ExternalLink } from 'lucide-react'
+import { Brain, Eye, Code, Award, BookOpen, ExternalLink } from 'lucide-react'
 
 export default function AISpotlight() {
   const publications = [
-    {
-      title: "Device Control System for a Smart Home using Voice Commands: A Practical Case",
-      venue: "ACM Conference: the 2018 10th International Conference (ICIME)",
-      year: "2018",
-      authors: "Guamán S, Calvopiña A, Orta P, Tapia F, Gunn Yoo S",
-      doi: "ICIME 2018 Manchester, September 22-24, 2018",
-      description: "Practical case of device control through voice recognition, using Amazon Echo Dot, Raspberry Pi, and Amazon Cloud with an ngrok server."
-    },
     {
       title: "Vehicle Counting System in Urban Areas: A Practical Case",
       venue: "IEEE 7th International Conference for Convergence in Technology (I2CT)",
       year: "2022",
       authors: "Almeida J, Guamán S, Gunn Yoo S",
-      doi: "April 7th, 2022",
-      description: "Computer vision system for vehicle detection and counting using iterative development methodology for urban traffic management."
+      doi: "10.1109/I2CT54291.2022.9823982",
+      url: "https://ieeexplore.ieee.org/document/9823982",
+      description: "Computer vision system for vehicle detection and counting using iterative development methodology for urban traffic management.",
+      citations: "79 citations",
+      views: "Full text views available"
+    },
+    {
+      title: "Device Control System for a Smart Home using Voice Commands: A Practical Case",
+      venue: "ACM Conference: 2018 10th International Conference (ICIME)",
+      year: "2018",
+      authors: "Guamán S, Calvopiña A, Orta P, Tapia F, Gunn Yoo S",
+      doi: "10.1145/3285957.3285977",
+      url: "https://dl.acm.org/doi/10.1145/3285957.3285977",
+      description: "Practical case of device control through voice recognition, using Amazon Echo Dot, Raspberry Pi, and Amazon Cloud with an ngrok server.",
+      citations: "17 citations",
+      views: "ResearchGate full-text available"
     }
   ]
 
@@ -35,10 +41,10 @@ export default function AISpotlight() {
       skills: ["Object Detection", "Facial Recognition", "YOLO", "OpenCV", "FaceNet"]
     },
     {
-      icon: <Home className="w-6 h-6" />,
-      title: "Smart Home Systems",
-      description: "Pioneering research in IoT and voice control for intelligent home environments with practical implementations",
-      skills: ["Voice Control", "IoT Integration", "Amazon Echo", "Raspberry Pi", "Smart Devices"]
+      icon: <Code className="w-6 h-6" />,
+      title: "Senior Full Stack Engineer",
+      description: "Expert-level full-stack development using AI-powered tools like Cursor, Windsurf, and MCPs for enhanced productivity",
+      skills: ["React", "Spring Boot", "Redux", "Microservices", "REST APIs", "AI Assistants"]
     }
   ]
 
@@ -164,6 +170,24 @@ export default function AISpotlight() {
                       <span className="text-xs font-mono text-cyber-muted">
                         DOI: {pub.doi}
                       </span>
+                      {pub.url && (
+                        <motion.a
+                          href={pub.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="inline-flex items-center gap-1 px-3 py-1 bg-cyber-surface rounded-full text-xs font-mono text-cyber-accent hover-lift"
+                        >
+                          <ExternalLink className="w-3 h-3" />
+                          VIEW PAPER
+                        </motion.a>
+                      )}
+                      {pub.citations && (
+                        <span className="text-xs font-mono text-cyber-tertiary ml-2">
+                          {pub.citations}
+                        </span>
+                      )}
                     </div>
                   </div>
                   

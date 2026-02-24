@@ -1,34 +1,52 @@
 import { motion } from 'framer-motion'
-import { Zap, Code2, BrainCircuit, Rocket, Terminal, Sparkles } from 'lucide-react'
+import { Zap, Code2, BrainCircuit, Rocket, Terminal, Sparkles, GitBranch, Cpu } from 'lucide-react'
 
 export default function HybridEdge() {
   const tools = [
     {
-      icon: <Code2 className="w-8 h-8" />,
-      name: "Cursor AI",
-      description: "AI-powered code editor that understands context and accelerates development",
-      features: ["Intelligent code completion", "Context-aware suggestions", "Natural language to code"],
+      icon: <Zap className="w-6 h-6" />,
+      title: "AI-Powered Development",
+      description: "Leveraging artificial intelligence to accelerate development workflows and enhance code quality",
+      features: [
+        "Automated code generation and completion",
+        "Intelligent debugging assistance",
+        "Performance optimization suggestions",
+        "Security vulnerability detection"
+      ],
+      tech: ["AI Assistants", "Code Generation", "Smart Testing", "Automated Refactoring"],
       color: "text-cyber-accent",
       bgColor: "bg-cyber-accent/10",
       borderColor: "border-cyber-accent/30"
     },
     {
-      icon: <BrainCircuit className="w-8 h-8" />,
-      name: "MCPs (Model Context Protocols)",
-      description: "Advanced AI model integration for enhanced productivity and automation",
-      features: ["Multi-model orchestration", "Context preservation", "Intelligent workflow automation"],
-      color: "text-cyber-tertiary",
-      bgColor: "bg-cyber-tertiary/10",
-      borderColor: "border-cyber-tertiary/30"
-    },
-    {
-      icon: <Terminal className="w-8 h-8" />,
-      name: "AI-Enhanced Toolchain",
-      description: "Custom development environment supercharged with artificial intelligence",
-      features: ["Automated testing", "Intelligent debugging", "Code optimization"],
+      icon: <GitBranch className="w-6 h-6" />,
+      title: "Advanced DevOps Integration",
+      description: "Modern development operations with automated pipelines and intelligent deployment strategies",
+      features: [
+        "CI/CD pipeline automation",
+        "Infrastructure as Code (IaC)",
+        "Container orchestration",
+        "Monitoring and observability"
+      ],
+      tech: ["Docker", "Kubernetes", "GitHub Actions", "Terraform", "Prometheus"],
       color: "text-cyber-secondary",
       bgColor: "bg-cyber-secondary/10",
       borderColor: "border-cyber-secondary/30"
+    },
+    {
+      icon: <Cpu className="w-6 h-6" />,
+      title: "Performance Engineering",
+      description: "Systematic approach to application performance optimization and scalability",
+      features: [
+        "Load testing and benchmarking",
+        "Database query optimization",
+        "Caching strategies implementation",
+        "Microservices performance tuning"
+      ],
+      tech: ["JMeter", "Redis", "Nginx", "New Relic", "Grafana"],
+      color: "text-cyber-tertiary",
+      bgColor: "bg-cyber-tertiary/10",
+      borderColor: "border-cyber-tertiary/30"
     }
   ]
 
