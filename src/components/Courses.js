@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Award, BookOpen, Calendar, ChevronDown } from 'lucide-react'
+import { GraduationCap, Award, BookOpen, Calendar, ChevronDown, Github, ExternalLink } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Courses() {
@@ -45,224 +45,254 @@ export default function Courses() {
 
   const certifications = [
     {
+      title: "Botrytis - AI Disease Detection",
+      issuer: "Personal Project",
+      year: "2023",
+      description: "Machine Learning models for detecting Botrytis diseases in flowers using AI.",
+      url: "https://github.com/stevengf14/botrytis",
+      icon: <Github className="w-5 h-5 text-cyber-accent" />
+    },
+    {
+      title: "React Developer Guide 2023",
+      issuer: "Practice Repository",
+      year: "2023",
+      description: "Collection of projects demonstrating various React techniques and modern frontend patterns.",
+      url: "https://github.com/stevengf14/react-guide-2023",
+      icon: <Github className="w-5 h-5 text-cyber-accent" />
+    },
+    {
+      title: "Functional Programming with Java",
+      issuer: "Course Project",
+      year: "2023",
+      description: "Exploration and application of functional programming paradigms in Java.",
+      url: "https://github.com/stevengf14/functional-programming/tree/main/src/main/java/ec/com/linkedinlearning/functionalprogramming",
+      icon: <Github className="w-5 h-5 text-cyber-accent" />
+    },
+    {
+      title: "Reactive Programming with Spring WebFlux",
+      issuer: "Training Project",
+      year: "2023",
+      description: "Comprehensive implementation of Java reactive programming, Spring WebFlux, and Eureka.",
+      url: "https://github.com/stevengf14/springboot-webflux-training",
+      icon: <Github className="w-5 h-5 text-cyber-accent" />
+    },
+    {
+      title: "SVision - Applied Computer Vision",
+      issuer: "Personal Project",
+      year: "2024",
+      description: "Advanced CV project featuring facial recognition, edge detection, and image scaling.",
+      url: "https://github.com/stevengf14/svision",
+      icon: <Github className="w-5 h-5 text-cyber-accent" />
+    },
+    {
       title: "Executive Leadership",
       issuer: "Universidad Internacional del Ecuador",
       year: "2025",
-      credentialId: "90ba582c-791b-4cf3-94eb-1e7cbc9cfed1",
-      description: "Transformative and referential executive leadership program strengthening leadership skills"
+      description: "Transformative and referential executive leadership program strengthening leadership skills",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "AI Immersion + Google Gemini",
       issuer: "Alura",
       year: "2025",
-      credentialId: "90ba582c-791b-4cf3-94eb-1e7cbc9cfed1",
-      description: "Advanced AI integration with Google Gemini technologies"
+      description: "Advanced AI integration with Google Gemini technologies",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Java Object-Oriented Programming",
       issuer: "LinkedIn",
       year: "2024",
-      credentialId: "21cdecea7e78654933e6442f8179b30f850ae90260fbd026a010012ceb46ac27",
-      description: "Advanced object-oriented programming principles and practices in Java"
+      description: "Advanced object-oriented programming principles and practices in Java",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Functional Programming",
       issuer: "LinkedIn",
       year: "2024",
-      credentialId: "c1f8100cbde00e0f86aff9e989ce8501638b044b999dbf9c3bb76d8a82d3c08c",
-      description: "Functional programming paradigms and implementation patterns"
+      description: "Functional programming paradigms and implementation patterns",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Mastering Java: Collections",
       issuer: "LinkedIn",
       year: "2024",
-      credentialId: "e5b7cb8240ca26ccdc427d50cc818f6cf563fe8a607d32330c94d6e61dbefa54",
-      description: "Advanced Java collections framework and data structures"
+      description: "Advanced Java collections framework and data structures",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "React: Design Patterns",
       issuer: "LinkedIn",
       year: "2024",
-      credentialId: "d66c39945f2152ed4e2bef7086ec0e1427b722605bfc2c892498e6306bd1fdad",
-      description: "Advanced React design patterns and best practices"
+      description: "Advanced React design patterns and best practices",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Angular Essential",
       issuer: "LinkedIn",
       year: "2024",
-      credentialId: "b8e141c1792ebcb5c33bd8bd06c68388f47b98d3fe856ff453b6fc59b1db57e1",
-      description: "Essential Angular framework development concepts"
+      description: "Essential Angular framework development concepts",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "React Redux Essential",
       issuer: "LinkedIn",
       year: "2024",
-      credentialId: "8f6c636991631e97399add47e7cf04e8544db4d1ffb96d10d4d6f267b6a9378b",
-      description: "React Redux state management and middleware patterns"
+      description: "React Redux state management and middleware patterns",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "REST Assured API Testing",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-8f056296-8fc3-4eb7-b9a4-a3f2d6d1ef32",
-      description: "API test automation using REST Assured framework"
+      description: "API test automation using REST Assured framework",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "React: Full Stack WebApp with Spring Boot 2023",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-a2baaad3-85da-423d-b5a5-e6efc91897d1",
-      description: "Complete full-stack web application development with React and Spring Boot"
+      description: "Complete full-stack web application development with React and Spring Boot",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Reactive Programming with Spring Boot and Spring WebFlux",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-6a18b6cc-92c2-4703-b3bb-c5d84edc8ee9",
-      description: "Reactive programming patterns using Spring Boot and Spring WebFlux"
+      description: "Reactive programming patterns using Spring Boot and Spring WebFlux",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Unit Testing in Java with JUnit 5 and Mockito",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-b0d1e50c-5268-4288-8704-b7f677881832",
-      description: "Comprehensive unit testing in Java using JUnit 5 and Mockito frameworks"
+      description: "Comprehensive unit testing in Java using JUnit 5 and Mockito frameworks",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Definitive Guide: 9 Advanced Patterns in ReactJS",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-ac5823c6-adbd-4bf7-83d6-1f58452cbb1a",
-      description: "Advanced React patterns and best practices guide"
+      description: "Advanced React patterns and best practices guide",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Reactive Programming in Java using RXJava 3.x - ReactiveX",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-60269b87-9417-4d63-992c-e09e12f9c232",
-      description: "Reactive programming patterns using RXJava 3.x and ReactiveX"
+      description: "Reactive programming patterns using RXJava 3.x and ReactiveX",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
-      title: "Microservicios con Spring Boot y Spring Cloud Netflix Eureka",
+      title: "Microservices with Spring Boot and Spring Cloud Netflix Eureka",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-688bc8dd-46bf-4d36-96fc-87ae1ccedff7",
-      description: "Microservices architecture with Spring Boot and Netflix Eureka"
+      description: "Microservices architecture with Spring Boot and Netflix Eureka",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Advanced React and Redux",
       issuer: "Udemy",
       year: "2023",
-      credentialId: "UC-a94ee5bf-d5ad-4b7f-a431-c848d0e19d0f",
-      description: "Advanced React and Redux patterns for complex applications"
+      description: "Advanced React and Redux patterns for complex applications",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "JavaScript Frameworks Master: Angular, React, Vue",
       issuer: "Udemy",
       year: "2022",
-      credentialId: "UC-99201b11-52a2-4c3c-80b7-e160b9e2050",
-      description: "Comprehensive JavaScript frameworks mastery including Angular, React, and Vue"
+      description: "Comprehensive JavaScript frameworks mastery including Angular, React, and Vue",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Testing React with Jest and React Testing Library (RTL)",
       issuer: "Udemy",
       year: "2022",
-      credentialId: "UC-61c28797-3956-4168-9a95-245777b82f43",
-      description: "React testing strategies using Jest and React Testing Library"
+      description: "React testing strategies using Jest and React Testing Library",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Build React forms using Formik, No more pain!",
       issuer: "Udemy",
       year: "2022",
-      credentialId: "UC-59b9c8f6-0c05-49cf-853c-6e6c27ad36f0",
-      description: "Form building in React using Formik library"
+      description: "Form building in React using Formik library",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "React, React Redux and Redux Saga - Master React State/Hooks",
       issuer: "Udemy",
       year: "2022",
-      credentialId: "UC-6c62729f-67da-488b-96b1-8321dddff3dd",
-      description: "Master React state management with Redux and Redux Saga"
+      description: "Master React state management with Redux and Redux Saga",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Advanced JavaScript: Regular Expressions",
       issuer: "LinkedIn",
       year: "2022",
-      credentialId: "AYJ82X8R-VTZ53ISqwkkI3c-vHFI",
-      description: "Advanced JavaScript regular expressions and pattern matching"
+      description: "Advanced JavaScript regular expressions and pattern matching",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Advanced JavaScript: Best Practices",
       issuer: "LinkedIn",
       year: "2022",
-      credentialId: "ASKXNHDLMMh2iR0ng3KnxFCvDMY6",
-      description: "JavaScript best practices and coding standards"
+      description: "JavaScript best practices and coding standards",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Essential JavaScript",
       issuer: "LinkedIn",
       year: "2022",
-      credentialId: "AaoyqgtcSp0roLuDtaA7N36u3Cus",
-      description: "Essential JavaScript fundamentals and core concepts"
+      description: "Essential JavaScript fundamentals and core concepts",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Web Development Fundamentals: Full Stack or Front-end",
       issuer: "LinkedIn",
       year: "2022",
-      credentialId: "AQcBCdQ1a2YD9XK6_bY8Fu-o6drM",
-      description: "Web development fundamentals and full-stack vs front-end decision"
+      description: "Web development fundamentals and full-stack vs front-end decision",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Python University - OOP, PySide, Tkinter, Django and Flask!",
       issuer: "Udemy",
       year: "2022",
-      credentialId: "UC-df0128b8-12aa-436c-8319-fe3dc7fdcd7c",
-      description: "Comprehensive Python programming with GUI frameworks and web development"
+      description: "Comprehensive Python programming with GUI frameworks and web development",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "Project Management for Everyone with PMI Methodology",
       issuer: "Udemy",
       year: "2021",
-      credentialId: "UC-915de3ff-fc61-494d-bcbb-99cc8a0d7999",
-      description: "Project management fundamentals using PMI methodology"
+      description: "Project management fundamentals using PMI methodology",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "EF SET Certificate",
       issuer: "EF International Language Centers",
       year: "2021",
-      credentialId: "wD7Sgk",
-      description: "English language proficiency certification"
+      description: "English language proficiency certification",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     },
     {
       title: "LLAMA CAMP COHORT 2",
       issuer: "Awana",
       year: "2021",
-      description: "Advanced AI and machine learning bootcamp"
+      description: "Advanced AI and machine learning bootcamp",
+      icon: <Award className="w-5 h-5 text-cyber-accent" />
     }
   ]
 
-  const displayedCertifications = showAllCertifications ? certifications : certifications.slice(0, 10)
-  const remainingCertifications = certifications.length - 10
+  const displayedCertifications = showAllCertifications ? certifications : certifications.slice(0, 6)
+  const remainingCertifications = certifications.length - 6
 
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
   }
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   }
 
   return (
@@ -278,7 +308,7 @@ export default function Courses() {
         >
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6">
             <BookOpen className="w-5 h-5 text-cyber-accent" />
-            <span className="text-sm font-mono text-cyber-accent">EDUCATION</span>
+            <span className="text-sm font-mono text-cyber-accent">EDUCATION &amp; TRAINING</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -286,7 +316,7 @@ export default function Courses() {
           </h2>
           
           <p className="text-xl text-cyber-muted max-w-3xl mx-auto font-mono">
-            Systems Engineering professional with advanced expertise in Applied AI, Machine Learning, and enterprise software development
+           Systems Engineering professional with advanced expertise in Applied AI, Machine Learning, and enterprise software development
           </p>
         </motion.div>
 
@@ -296,7 +326,7 @@ export default function Courses() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="space-y-8 mb-20"
+          className="space-y-8 mb-24"
         >
           {education.map((edu, index) => (
             <motion.div
@@ -354,14 +384,34 @@ export default function Courses() {
           ))}
         </motion.div>
 
-        {/* Certifications */}
+        {/* Certifications Subtitle */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12"
+        >
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6 relative">
+            <Award className="w-5 h-5 text-cyber-tertiary" />
+            <span className="text-sm font-mono text-cyber-tertiary">EXPERTISE &amp; RECOGNITION</span>
+          </div>
+          <h3 className="text-3xl md:text-5xl font-bold mb-4">
+            Projects <span className="text-cyber-tertiary">&amp; Certifications</span>
+          </h3>
+          <p className="text-lg text-cyber-muted font-mono max-w-2xl mx-auto">
+            Highlighted open-source repositories and comprehensive professional certifications.
+          </p>
+        </motion.div>
+
+        {/* Certifications Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {displayedCertifications.map((cert, index) => (
               <motion.div
                 key={index}
@@ -369,24 +419,49 @@ export default function Courses() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.05 }}
-                className="glass p-4 rounded-lg hover-lift"
               >
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-cyber-surface rounded-full flex items-center justify-center flex-shrink-0">
-                    <Award className="w-5 h-5 text-cyber-accent" />
+                {cert.url ? (
+                  <a href={cert.url} target="_blank" rel="noopener noreferrer" className="block h-full group">
+                    <div className="glass p-6 rounded-xl cyber-border h-full transition-all group-hover:scale-[1.02] group-hover:border-cyber-accent/50 relative">
+                      <ExternalLink className="absolute top-4 right-4 w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-cyber-accent" />
+                      <div className="flex items-start gap-4 flex-col">
+                        <div className="w-12 h-12 bg-cyber-surface rounded-full flex items-center justify-center flex-shrink-0">
+                          {cert.icon}
+                        </div>
+                        <div>
+                          <h4 className="text-xl font-semibold text-cyber-text mb-2 group-hover:text-cyber-accent transition-colors mt-2">
+                            {cert.title}
+                          </h4>
+                          <p className="text-cyber-accent font-mono text-xs mb-3 uppercase tracking-wider">
+                            {cert.issuer} • {cert.year}
+                          </p>
+                          <p className="text-cyber-muted text-sm leading-relaxed">
+                            {cert.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div className="glass p-6 rounded-xl cyber-border h-full hover-lift">
+                    <div className="flex items-start gap-4 flex-col">
+                      <div className="w-12 h-12 bg-cyber-surface rounded-full flex items-center justify-center flex-shrink-0">
+                        {cert.icon}
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-cyber-text mb-2 mt-2">
+                          {cert.title}
+                        </h4>
+                        <p className="text-cyber-accent font-mono text-xs mb-3 uppercase tracking-wider">
+                          {cert.issuer} • {cert.year}
+                        </p>
+                        <p className="text-cyber-muted text-sm leading-relaxed">
+                          {cert.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-cyber-text mb-2">
-                      {cert.title}
-                    </h4>
-                    <p className="text-cyber-accent font-mono text-sm mb-2">
-                      {cert.issuer} • {cert.year}
-                    </p>
-                    <p className="text-cyber-muted text-sm">
-                      {cert.description}
-                    </p>
-                  </div>
-                </div>
+                )}
               </motion.div>
             ))}
           </div>
@@ -398,16 +473,16 @@ export default function Courses() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-center mt-8"
+              className="text-center mt-12"
             >
               <motion.button
                 onClick={() => setShowAllCertifications(true)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-cyber-surface rounded-full text-cyber-accent font-mono text-sm hover-lift border border-cyber-accent/30"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-cyber-surface rounded-full text-cyber-tertiary font-mono text-sm hover-lift border border-cyber-tertiary/30 shadow-lg"
               >
                 <ChevronDown className="w-4 h-4" />
-                See {remainingCertifications} more certifications
+                See {remainingCertifications} more items
               </motion.button>
             </motion.div>
           )}
