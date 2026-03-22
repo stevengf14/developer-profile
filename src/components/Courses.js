@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Award, BookOpen, Calendar } from 'lucide-react'
+import { GraduationCap, Award, BookOpen, Calendar, ChevronDown } from 'lucide-react'
+import { useState } from 'react'
 
 export default function Courses() {
+  const [showAllCertifications, setShowAllCertifications] = useState(false)
   const education = [
     {
       icon: <GraduationCap className="w-6 h-6" />,
@@ -11,6 +13,7 @@ export default function Courses() {
       period: "2024 - 2026",
       description: "Advanced specialization in Machine Learning, Deep Learning, Computer Vision, Neural Networks, and AI applications in real-world scenarios. Research focused on practical implementations and industry-relevant solutions.",
       highlights: [
+        "Thesis successfully defended",
         "Machine Learning & Deep Learning algorithms",
         "Computer Vision and Image Processing",
         "Neural Networks & Convolutional Networks",
@@ -70,7 +73,7 @@ export default function Courses() {
       description: "Functional programming paradigms and implementation patterns"
     },
     {
-      title: "Domina Java: Colecciones",
+      title: "Mastering Java: Collections",
       issuer: "LinkedIn",
       year: "2024",
       credentialId: "e5b7cb8240ca26ccdc427d50cc818f6cf563fe8a607d32330c94d6e61dbefa54",
@@ -84,14 +87,14 @@ export default function Courses() {
       description: "Advanced React design patterns and best practices"
     },
     {
-      title: "Angular Esencial",
+      title: "Angular Essential",
       issuer: "LinkedIn",
       year: "2024",
       credentialId: "b8e141c1792ebcb5c33bd8bd06c68388f47b98d3fe856ff453b6fc59b1db57e1",
       description: "Essential Angular framework development concepts"
     },
     {
-      title: "React Redux Esencial",
+      title: "React Redux Essential",
       issuer: "LinkedIn",
       year: "2024",
       credentialId: "8f6c636991631e97399add47e7cf04e8544db4d1ffb96d10d4d6f267b6a9378b",
@@ -105,28 +108,28 @@ export default function Courses() {
       description: "API test automation using REST Assured framework"
     },
     {
-      title: "React: Creando webapp Full Stack con Spring Boot 2023",
+      title: "React: Full Stack WebApp with Spring Boot 2023",
       issuer: "Udemy",
       year: "2023",
       credentialId: "UC-a2baaad3-85da-423d-b5a5-e6efc91897d1",
       description: "Complete full-stack web application development with React and Spring Boot"
     },
     {
-      title: "Programación Reactiva con Spring Boot y Spring WebFlux",
+      title: "Reactive Programming with Spring Boot and Spring WebFlux",
       issuer: "Udemy",
       year: "2023",
       credentialId: "UC-6a18b6cc-92c2-4703-b3bb-c5d84edc8ee9",
       description: "Reactive programming patterns using Spring Boot and Spring WebFlux"
     },
     {
-      title: "Aprende Unit Test en Java con Junit 5 y Mockito",
+      title: "Unit Testing in Java with JUnit 5 and Mockito",
       issuer: "Udemy",
       year: "2023",
       credentialId: "UC-b0d1e50c-5268-4288-8704-b7f677881832",
       description: "Comprehensive unit testing in Java using JUnit 5 and Mockito frameworks"
     },
     {
-      title: "Guía definitiva: Aprende los 9 Patrones Avanzados en ReactJS",
+      title: "Definitive Guide: 9 Advanced Patterns in ReactJS",
       issuer: "Udemy",
       year: "2023",
       credentialId: "UC-ac5823c6-adbd-4bf7-83d6-1f58452cbb1a",
@@ -154,7 +157,7 @@ export default function Courses() {
       description: "Advanced React and Redux patterns for complex applications"
     },
     {
-      title: "Master en Frameworks JavaScript: Aprende Angular, React, Vue",
+      title: "JavaScript Frameworks Master: Angular, React, Vue",
       issuer: "Udemy",
       year: "2022",
       credentialId: "UC-99201b11-52a2-4c3c-80b7-e160b9e2050",
@@ -182,42 +185,42 @@ export default function Courses() {
       description: "Master React state management with Redux and Redux Saga"
     },
     {
-      title: "JavaScript avanzado: Expresiones regulares",
+      title: "Advanced JavaScript: Regular Expressions",
       issuer: "LinkedIn",
       year: "2022",
       credentialId: "AYJ82X8R-VTZ53ISqwkkI3c-vHFI",
       description: "Advanced JavaScript regular expressions and pattern matching"
     },
     {
-      title: "JavaScript avanzado: Buenas prácticas",
+      title: "Advanced JavaScript: Best Practices",
       issuer: "LinkedIn",
       year: "2022",
       credentialId: "ASKXNHDLMMh2iR0ng3KnxFCvDMY6",
       description: "JavaScript best practices and coding standards"
     },
     {
-      title: "JavaScript esencial",
+      title: "Essential JavaScript",
       issuer: "LinkedIn",
       year: "2022",
       credentialId: "AaoyqgtcSp0roLuDtaA7N36u3Cus",
       description: "Essential JavaScript fundamentals and core concepts"
     },
     {
-      title: "Fundamentos del desarrollo web: Full Stack o Front-end",
+      title: "Web Development Fundamentals: Full Stack or Front-end",
       issuer: "LinkedIn",
       year: "2022",
       credentialId: "AQcBCdQ1a2YD9XK6_bY8Fu-o6drM",
       description: "Web development fundamentals and full-stack vs front-end decision"
     },
     {
-      title: "Universidad Python - POO, PySide, Tkinter, Django y Flask!",
+      title: "Python University - OOP, PySide, Tkinter, Django and Flask!",
       issuer: "Udemy",
       year: "2022",
       credentialId: "UC-df0128b8-12aa-436c-8319-fe3dc7fdcd7c",
       description: "Comprehensive Python programming with GUI frameworks and web development"
     },
     {
-      title: "Gerencia de Proyectos para todos con Metodología PMI",
+      title: "Project Management for Everyone with PMI Methodology",
       issuer: "Udemy",
       year: "2021",
       credentialId: "UC-915de3ff-fc61-494d-bcbb-99cc8a0d7999",
@@ -237,6 +240,9 @@ export default function Courses() {
       description: "Advanced AI and machine learning bootcamp"
     }
   ]
+
+  const displayedCertifications = showAllCertifications ? certifications : certifications.slice(0, 10)
+  const remainingCertifications = certifications.length - 10
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -355,12 +361,8 @@ export default function Courses() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h3 className="text-2xl font-bold text-cyber-text mb-8 text-center">
-            Professional Certifications & Technical Expertise
-          </h3>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {certifications.map((cert, index) => (
+            {displayedCertifications.map((cert, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -388,6 +390,27 @@ export default function Courses() {
               </motion.div>
             ))}
           </div>
+
+          {/* Show More Button */}
+          {!showAllCertifications && remainingCertifications > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-center mt-8"
+            >
+              <motion.button
+                onClick={() => setShowAllCertifications(true)}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-cyber-surface rounded-full text-cyber-accent font-mono text-sm hover-lift border border-cyber-accent/30"
+              >
+                <ChevronDown className="w-4 h-4" />
+                See {remainingCertifications} more certifications
+              </motion.button>
+            </motion.div>
+          )}
         </motion.div>
       </div>
     </section>

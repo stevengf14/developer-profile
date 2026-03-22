@@ -1,45 +1,16 @@
 import { motion } from 'framer-motion'
-import { Code, Database, Cloud, Shield, TrendingUp, Zap, Award } from 'lucide-react'
+import { Database, Cloud, Shield, Code } from 'lucide-react'
 
 export default function CoreEngineering() {
-  const technologies = [
-    {
-      name: "Java",
-      level: 95,
-      color: "bg-cyber-accent"
-    },
-    {
-      name: "Spring Boot",
-      level: 90,
-      color: "bg-cyber-tertiary"
-    },
-    {
-      name: "React",
-      level: 88,
-      color: "bg-cyber-secondary"
-    },
-    {
-      name: "Redux-Saga",
-      level: 85,
-      color: "bg-cyber-accent"
-    },
-    {
-      name: "Python",
-      level: 82,
-      color: "bg-cyber-tertiary"
-    },
-    {
-      name: "Microservices",
-      level: 87,
-      color: "bg-cyber-secondary"
-    }
-  ]
-
   const experience = [
     {
       icon: <Database className="w-6 h-6" />,
       title: "Galileo Financial Technologies",
-      description: "Senior Software Engineer leading full-stack development and microservices architecture for financial solutions",
+      roles: [
+        { title: "Senior Software Engineer", period: "Sep 2025 - Present" },
+        { title: "Full Stack Developer", period: "Mar 2022 - Sep 2025" }
+      ],
+      description: "Leading full-stack development and microservices architecture for large-scale financial solutions.",
       achievements: [
         "Technical Leadership & Design of large-scale applications",
         "Scalable microservices architecture with Spring Boot",
@@ -51,7 +22,10 @@ export default function CoreEngineering() {
     {
       icon: <Cloud className="w-6 h-6" />,
       title: "Banco Internacional Ecuador",
-      description: "Programmer Analyst developing core banking systems and satellite applications for banking core updates",
+      roles: [
+        { title: "Programmer Analyst", period: "Jan 2020 - Mar 2022" }
+      ],
+      description: "Developed core banking systems and satellite applications for banking core updates.",
       achievements: [
         "IEEE 830 standard compliance for requirements",
         "Banking core satellite applications development",
@@ -63,7 +37,10 @@ export default function CoreEngineering() {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "AlterBios",
-      description: "Software Developer creating electronic billing systems and inventory management solutions",
+      roles: [
+        { title: "Software Developer", period: "Mar 2019 - Jan 2020" }
+      ],
+      description: "Created electronic billing systems and inventory management solutions.",
       achievements: [
         "Complete electronic billing system development",
         "Custom inventory management system",
@@ -122,43 +99,13 @@ export default function CoreEngineering() {
           </p>
         </motion.div>
 
-        {/* Stats Overview */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-20"
-        >
-          <div className="glass p-6 rounded-lg text-center cyber-border">
-            <TrendingUp className="w-8 h-8 text-cyber-accent mx-auto mb-3" />
-            <div className="text-2xl font-bold gradient-text mb-1">$50B+</div>
-            <div className="text-sm text-cyber-muted font-mono">Transactions Processed</div>
-          </div>
-          <div className="glass p-6 rounded-lg text-center cyber-border">
-            <Zap className="w-8 h-8 text-cyber-tertiary mx-auto mb-3" />
-            <div className="text-2xl font-bold gradient-text mb-1">&lt;100ms</div>
-            <div className="text-sm text-cyber-muted font-mono">Response Time</div>
-          </div>
-          <div className="glass p-6 rounded-lg text-center cyber-border">
-            <Database className="w-8 h-8 text-cyber-secondary mx-auto mb-3" />
-            <div className="text-2xl font-bold gradient-text mb-1">10M+</div>
-            <div className="text-sm text-cyber-muted font-mono">Daily Active Users</div>
-          </div>
-          <div className="glass p-6 rounded-lg text-center cyber-border">
-            <Shield className="w-8 h-8 text-cyber-accent mx-auto mb-3" />
-            <div className="text-2xl font-bold gradient-text mb-1">100%</div>
-            <div className="text-sm text-cyber-muted font-mono">Security Compliance</div>
-          </div>
-        </motion.div>
-
-        {/* Experience Cards */}
+        {/* Experience Timeline */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
+          className="space-y-12"
         >
           {experience.map((item, index) => (
             <motion.div
@@ -168,7 +115,15 @@ export default function CoreEngineering() {
               className="glass p-8 rounded-xl cyber-border hover-lift"
             >
               <div className="text-cyber-secondary mb-4">{item.icon}</div>
-              <h3 className="text-2xl font-bold mb-3 text-cyber-text">{item.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-cyber-text">{item.title}</h3>
+              <div className="mb-6 space-y-3">
+                {item.roles.map((role, idx) => (
+                  <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between border-l-2 border-cyber-secondary/50 pl-4">
+                    <span className="text-cyber-accent font-semibold">{role.title}</span>
+                    <span className="text-xs font-mono text-cyber-muted">{role.period}</span>
+                  </div>
+                ))}
+              </div>
               <p className="text-cyber-muted mb-6 font-mono text-sm">{item.description}</p>
               
               <div className="space-y-2 mb-6">
@@ -192,19 +147,6 @@ export default function CoreEngineering() {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Technology Stack */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 text-cyber-text">Technology Proficiency</h3>
-            <p className="text-cyber-muted font-mono">Core technologies powering enterprise solutions</p>
-          </div>
         </motion.div>
       </div>
     </section>

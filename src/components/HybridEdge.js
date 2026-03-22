@@ -53,20 +53,20 @@ export default function HybridEdge() {
   const workflows = [
     {
       title: "AI-First Development",
-      description: "Leveraging AI to write, review, and optimize code 10x faster",
-      time: "10x Speed",
+      description: "Leveraging AI to write, review, and accelerate development cycles",
+      time: "Accelerated",
       icon: <Rocket className="w-5 h-5" />
     },
     {
       title: "Intelligent Automation",
       description: "Automating repetitive tasks and complex workflows with AI precision",
-      time: "80% Reduction",
+      time: "Streamlined",
       icon: <Zap className="w-5 h-5" />
     },
     {
       title: "Context-Aware Coding",
-      description: "AI that understands project context and maintains consistency",
-      time: "95% Accuracy",
+      description: "AI that understands project context to maintain consistency and quality",
+      time: "High Quality",
       icon: <BrainCircuit className="w-5 h-5" />
     }
   ]

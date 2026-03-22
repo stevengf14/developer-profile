@@ -6,6 +6,7 @@ import Courses from '../src/components/Courses'
 import CoreEngineering from '../src/components/CoreEngineering'
 import HybridEdge from '../src/components/HybridEdge'
 import Contact from '../src/components/Contact'
+import FloatingContact from '../src/components/FloatingContact'
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
           <Contact />
         </div>
       </div>
+      <FloatingContact />
     </>
   )
 }
