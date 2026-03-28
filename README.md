@@ -37,18 +37,6 @@ The application architecture emphasizes performance, clean UI/UX, and is infused
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Deployment**: [Netlify](https://www.netlify.com/)
 
-## 📸 Screenshots
-
-*(For recruiters or visitors looking at the repo)*
-
-| Hero Identity | Engineering Timeline |
-| :---: | :---: |
-| <img src="./public/screenshot-hero.png" width="400"/> | <img src="./public/screenshot-timeline.png" width="400"/> |
-
-| Academic & AI Research | Certifications |
-| :---: | :---: |
-| <img src="./public/screenshot-ai.png" width="400"/> | <img src="./public/screenshot-certs.png" width="400"/> |
-
 ## 🛠️ Local Development
 
 To run this project locally:
@@ -79,4 +67,3 @@ Whether you're exploring enterprise software solutions or the integration of App
 👤 **Steven Guamán Figueroa**
 - Email: stevengf14@gmail.com
 - LinkedIn: [linkedin.com/in/stevengf14](https://linkedin.com/in/stevengf14)
-- WhatsApp: [+593978639798](https://wa.me/593978639798)

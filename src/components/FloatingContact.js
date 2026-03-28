@@ -1,17 +1,11 @@
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, X, MessageCircle } from 'lucide-react'
+import { Mail, Github, Linkedin, X } from 'lucide-react'
 import { useState } from 'react'
 
 export default function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false)
 
   const socialLinks = [
-    {
-      icon: <MessageCircle className="w-5 h-5" />,
-      name: "WhatsApp",
-      url: "https://wa.me/593978639798",
-      color: "hover:text-[#25D366]"
-    },
     {
       icon: <Github className="w-5 h-5" />,
       name: "GitHub",
