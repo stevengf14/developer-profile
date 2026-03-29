@@ -15,13 +15,13 @@
   <a href="mailto:stevengf14@gmail.com"><strong>Contact</strong></a>
 </p>
 
-## 🚀 Overview
+## Overview
 
 This repository contains the source code for my interactive developer portfolio. It is designed to act as a comprehensive digital resume, highlighting my professional career progression, IEEE/ACM publications, certifications, and technical stack. 
 
 The application architecture emphasizes performance, clean UI/UX, and is infused with a modern "cyber-grid" aesthetic powered by Framer Motion animations.
 
-## ✨ Key Features
+## Key Features
 
 - **Interactive AI Spotlight**: Dedicated section detailing my Master's thesis, publications, and Computer Vision expertise.
 - **Dynamic Experience Timeline**: A clear breakdown of my career progression (e.g., Galileo Financial Technologies, Banco Internacional).
@@ -29,7 +29,7 @@ The application architecture emphasizes performance, clean UI/UX, and is infused
 - **Cyber-Grid Animations**: Smooth scroll-triggered reveal animations via `framer-motion`.
 - **Floating Contact Integration**: Omni-channel contact button supporting direct WhatsApp and Email outreach.
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) (React 18)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -37,7 +37,7 @@ The application architecture emphasizes performance, clean UI/UX, and is infused
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Deployment**: [Netlify](https://www.netlify.com/)
 
-## 🛠️ Local Development
+## Local Development
 
 To run this project locally:
 
@@ -60,10 +60,10 @@ To run this project locally:
 4. **View the application:**
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📬 Get In Touch
+## Get In Touch
 
 Whether you're exploring enterprise software solutions or the integration of Applied AI to your workflows, I'm open to discussing how we can collaborate.
 
-👤 **Steven Guamán Figueroa**
+**Steven Guamán Figueroa**
 - Email: stevengf14@gmail.com
 - LinkedIn: [linkedin.com/in/stevengf14](https://linkedin.com/in/stevengf14)
